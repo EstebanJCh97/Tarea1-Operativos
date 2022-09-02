@@ -12,12 +12,19 @@ int main(){
     int dim;
  printf("Ingrese la dimension: ");
  scanf("%d",&dim);
-  int matriz[dim][dim];
+  int matrizA[dim][dim];
+  int matrizB[dim][dim];
+
  
- llenar_Matriz(dim,matriz);// esta parte llamo a la funcion
+ llenar_Matriz(dim,matrizA);// esta parte llamo a la funcion
+ llenar_Matriz(dim,matrizB);// esta parte llamo a la funcion
+
+ printf("\nLa matriz A es la siguiente \n");
+ mostrar_matriz(dim,matrizA);// esta parte llamo a la funcion para que me muestre la matriz
  
- mostrar_matriz(dim,matriz);// esta parte llamo a la funcion para que me muestre la matriz
- 
+ printf("\nLa matriz B es la siguiente");
+ printf("\n");
+ mostrar_matriz(dim,matrizB);// esta parte llamo a la funcion para que me muestre la matriz
  
  return 0;
 }
